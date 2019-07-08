@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Student.AttemptSectionController">
+   <children>
+      <Label fx:id="test_id" layoutX="272.0" layoutY="52.0" text="Label" />
+      <Label fx:id="section_no" layoutX="272.0" layoutY="81.0" text="Label" />
+      <Label fx:id="question" layoutX="128.0" layoutY="119.0" prefHeight="17.0" prefWidth="404.0" text="Label" />
+      <JFXButton fx:id="next" buttonType="RAISED" layoutX="382.0" layoutY="341.0" onAction="#nextClicked" style="-fx-background-color: Yellow;" text="Next&gt;" />
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="175.0" layoutY="341.0" onAction="#backClicked" style="-fx-background-color: Yellow;" text="&lt;Back" />
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="500.0" layoutY="341.0" onAction="#submitClicked" style="-fx-background-color: red;" text="Submit" />
+      <JFXRadioButton fx:id="optionA" layoutX="119.0" layoutY="153.0" text="-">
+         <toggleGroup>
+            <ToggleGroup fx:id="Answers" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="optionB" layoutX="119.0" layoutY="183.0" text="-" toggleGroup="$Answers" />
+      <JFXRadioButton fx:id="optionC" layoutX="119.0" layoutY="213.0" text="-" toggleGroup="$Answers" />
+      <JFXRadioButton fx:id="optionD" layoutX="119.0" layoutY="244.0" text="-" toggleGroup="$Answers" />
+      <Label layoutX="62.0" layoutY="153.0" text="A:" />
+      <Label layoutX="62.0" layoutY="183.0" text="B:" />
+      <Label layoutX="62.0" layoutY="213.0" text="C:" />
+      <Label layoutX="62.0" layoutY="244.0" text="D:" />
+   </children>
+</AnchorPane>

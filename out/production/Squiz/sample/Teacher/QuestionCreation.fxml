@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Teacher.QuestionCreationController">
+   <children>
+      <Label layoutX="243.0" layoutY="55.0" style="-fx-background-color: yellow;" text="Create Question" />
+      <Label fx:id="question_no" layoutX="61.0" layoutY="93.0" prefHeight="17.0" prefWidth="133.0" />
+      <JFXTextField fx:id="question" layoutX="60.0" layoutY="129.0" prefHeight="25.0" prefWidth="506.0" promptText="Question" />
+      <JFXTextField fx:id="option_a" layoutX="60.0" layoutY="162.0" prefHeight="25.0" prefWidth="506.0" promptText="Option A" />
+      <JFXTextField fx:id="option_b" layoutX="60.0" layoutY="200.0" prefHeight="25.0" prefWidth="506.0" promptText="Option B" />
+      <JFXTextField fx:id="option_c" layoutX="60.0" layoutY="240.0" prefHeight="25.0" prefWidth="506.0" promptText="Option C" />
+      <JFXTextField fx:id="option_d" layoutX="60.0" layoutY="275.0" prefHeight="25.0" prefWidth="506.0" promptText="Option D" />
+      <JFXComboBox fx:id="answer" layoutX="60.0" layoutY="323.0" prefHeight="25.0" prefWidth="142.0" promptText="Answer" />
+      <JFXButton fx:id="createquestion" buttonType="RAISED" layoutX="384.0" layoutY="323.0" onAction="#createQuestion" style="-fx-background-color: black;" text="Create" textFill="#edf853" />
+      <Label fx:id="sectionid" alignment="CENTER" layoutX="231.0" layoutY="21.0" prefHeight="17.0" prefWidth="109.0" />
+   </children>
+</AnchorPane>

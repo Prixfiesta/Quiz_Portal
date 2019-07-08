@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Student.StudentDashboardController">
+   <children>
+      <Label fx:id="welcomelabel" layoutX="247.0" layoutY="47.0" text="Label" />
+      <JFXButton fx:id="taketest" buttonType="RAISED" layoutX="235.0" layoutY="110.0" onAction="#takeTest" style="-fx-background-color: yellow;" text="Take Test" />
+      <JFXButton fx:id="seeresult" buttonType="RAISED" layoutX="227.0" layoutY="175.0" onAction="#seeResult" style="-fx-background-color: green;" text="View Results" />
+      <JFXButton fx:id="Login" buttonType="RAISED" layoutX="28.0" layoutY="43.0" onAction="#toLoginPage" style="-fx-background-color: grey;" text="Logout" />
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="574.0" layoutY="2.0" onAction="#closeClicked" style="-fx-background-color: red;" text="X" />
+   </children>
+</AnchorPane>

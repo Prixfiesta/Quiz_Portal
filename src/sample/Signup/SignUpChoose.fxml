@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Signup.SignUpChooseController">
+   <children>
+      <JFXButton fx:id="teachersignup" buttonType="RAISED" layoutX="102.0" layoutY="88.0" onAction="#teacherSignupClicked" prefHeight="194.0" prefWidth="138.0" style="-fx-background-color: #12ba13;" text="Teacher" />
+      <JFXButton fx:id="studentsignup" buttonType="RAISED" layoutX="330.0" layoutY="88.0" onAction="#studentSignUpClicked" prefHeight="194.0" prefWidth="138.0" style="-fx-background-color: #12ba13;" text="Student" />
+      <Label layoutX="277.0" layoutY="177.0" text="or" />
+      <Label alignment="CENTER" layoutX="240.0" layoutY="39.0" prefHeight="17.0" prefWidth="113.0" text="Signup As" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="close" layoutX="574.0" layoutY="2.0" onAction="#closeClicked" style="-fx-background-color: red;" text="X" />
+      <JFXButton fx:id="Login" buttonType="RAISED" layoutX="33.0" layoutY="345.0" onMouseClicked="#toLoginPage" style="-fx-background-color: yellow;" text="&lt;&lt; Login" />
+   </children>
+</AnchorPane>

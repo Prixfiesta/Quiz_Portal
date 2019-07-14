@@ -28,6 +28,7 @@ public class SectionLaunchController {
     private JFXButton sectionbutton;
 
     public void initialize(){
+        Session_Id.setSection_no(section_no);
         test_id.setText(current.getTest_id());
         sectionbutton.setText("Open Section 1");
     }
@@ -41,6 +42,7 @@ public class SectionLaunchController {
             System.out.println("Total no of sections is "+current.getNo_of_sections());
             System.out.println("Current section no: "+section_no);
             Session_Id.setSection_id(sections[section_no]);
+            Session_Id.setSection_no(section_no);
             Parent root = FXMLLoader.load(getClass().getResource("AttemptSection.fxml"));
             stage.setScene(new Scene(root));
             stage.sizeToScene();

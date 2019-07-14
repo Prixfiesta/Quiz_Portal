@@ -33,6 +33,10 @@ public class ShowResultController {
         marksscored.setText(Integer.toString(current.getMarks()));
         totalmarks.setText(Integer.toString(current.getNo_of_questions()));
         test_id.setText(current.getTest_id());
+        int a[] = Session_Id.getMarksgainedpersection();
+        for(int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+        }
     }
 
     @FXML

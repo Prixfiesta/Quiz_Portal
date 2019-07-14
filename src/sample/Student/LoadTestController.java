@@ -81,7 +81,10 @@ public class LoadTestController {
         current.setSections(sectionsar);
         current.setNo_of_sections(sectionsar.length);
         current.setMarks(0);
-
+        int [] no_of_q = new int[sections.size()];
+        int [] marks_gained =new int[sections.size()];
+        current.setMarksgainedpersection(marks_gained);
+        current.setQuestionspersection(no_of_q);
         if(sectionsar.length!=0){
             Parent root = FXMLLoader.load(getClass().getResource("SectionLaunch.fxml"));
             Scene dash = new Scene(root);

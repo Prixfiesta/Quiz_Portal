@@ -63,12 +63,14 @@ public class AttemptSectionController {
         Main.user.sendString(current.getSection_id());
         Main.user.sendString(current.getTest_id());
         questions = (List<String[]>)Main.user.recieveObject();
+        Session_Id.setquestionsforsection(questions.size(),Session_Id.getSection_No());
         System.out.println("qu:"+questions.size());
         answers = new String[questions.size()];
         for(int i=0;i<answers.length;i++){
             answers[i] = "";
         }
         current.setNo_of_questions(questions.size());
+
         question.setText(questions.get(0)[0]);
         optionA.setText(questions.get(0)[1]);
         optionB.setText(questions.get(0)[2]);
@@ -195,6 +197,7 @@ public class AttemptSectionController {
             if(answers[i].equalsIgnoreCase(questions.get(i)[5]));
             marks++;
         }
+        current.setmarksforsection(marks,Session_Id.getSection_No());
         current.setMarks(current.getMarks()+marks);
         Stage stage = (Stage)(((Node)event.getSource()).getScene().getWindow());
         stage.close();

@@ -8,16 +8,44 @@ public class Session_Id {
     private static String section_id;
     private static int marks;
     private static String[] sections;
-
+    private static int section_no;
+    private static int marksgainedpersection[];
+    private static int questionspersection[];
     public static String[] getSections(){
         return Session_Id.sections;
     }
     public static void setSections(String []sections){
         Session_Id.sections = sections;
     }
+    public static void setMarksgainedpersection(int a[]){
+        Session_Id.marksgainedpersection = a;
+    }
+    public static int[] getMarksgainedpersection(){
+        return Session_Id.marksgainedpersection;
+    }
+    public static void setmarksforsection(int m,int section_no){
+        Session_Id.marksgainedpersection[section_no] = m;
+    }
+    public static void setquestionsforsection(int q,int section_no){
+        Session_Id.questionspersection[section_no] = q;
+    }
+
+    public static void setQuestionspersection(int a[]){
+        Session_Id.questionspersection = a;
+    }
+    public static int[] getQuestionspersection(){
+        return Session_Id.questionspersection;
+    }
+
     public static int getMarks(){
         return Session_Id.marks;
 
+    }
+    public static int getSection_No(){
+        return Session_Id.section_no;
+    }
+    public static void setSection_no(int x){
+        Session_Id.section_no = x;
     }
     public static void setMarks(int marks){
         Session_Id.marks = marks;
